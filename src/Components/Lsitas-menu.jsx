@@ -11,6 +11,7 @@ const Listas = styled.ul`
   box-sizing: border-box;
   padding: 15px 30px;
   position: fixed;
+  z-index: 10000;
   bottom: 0;
   margin: 0;
   background: #080808;
