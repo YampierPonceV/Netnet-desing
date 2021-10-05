@@ -9,7 +9,7 @@ const Listas = styled.ul`
   height: auto;
   padding: 0;
   box-sizing: border-box;
-  padding: 15px 30px;
+  padding: 20px 30px;
   position: fixed;
   z-index: 10000;
   bottom: 0;
