@@ -25,4 +25,11 @@ export const ButtonContainer = styled.div`
     outline: none;
     padding: 0;
   }
+
+  @media screen and (min-width: 768px) {
+    justify-content: space-around;
+    .my-list {
+      display: none;
+    }
+  }
 `;

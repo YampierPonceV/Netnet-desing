@@ -18,6 +18,7 @@ import secDosCoverTres from "../img/japonesa/image3.png";
 import secDosCoverCuatro from "../img/japonesa/image4.png";
 import secDosCoverCinco from "../img/japonesa/image5.png";
 import secDosCoverSeis from "../img/japonesa/image6.png";
+import LayerDesktop from "./LayerDesktop";
 
 //seccion 3
 import secTresCoverUno from "../img/crimenes/image1.png";
@@ -26,48 +27,67 @@ import secTresCoverTres from "../img/crimenes/image3.png";
 import secTresCoverCuatro from "../img/crimenes/image4.png";
 import secTresCoverCinco from "../img/crimenes/image5.png";
 import secTresCoverSeis from "../img/crimenes/image6.png";
+
 const Layers = () => {
   return (
-    <Layer>
-      <section>
-        <h2>Populares en Netnet</h2>
-        <CardContent>
-          <Card url={coverUno} des="cover uno" titulo="matriz recardo"></Card>
-          <Card url={coverDos} des="cover uno" titulo="matriz recardo"></Card>
-          <Card url={coverTres} des="cover uno" titulo="matriz recardo"></Card>
-          <Card
-            url={coverCuatro}
-            des="cover uno"
-            titulo="matriz recardo"
-          ></Card>
-          <Card url={coverCinco} des="cover uno" titulo="matriz recardo"></Card>
-          <Card url={coverSeis} des="cover uno" titulo="matriz recardo"></Card>
-        </CardContent>
-      </section>
-      <section>
-        <h2>Series japonesas anime</h2>
-        <CardContent>
-          <Card url={secDosCoverUno} des="cover" titulo="japonesa"></Card>
-          <Card url={secDosCoverDos} des="cover" titulo="japonesa"></Card>
-          <Card url={secDosCoverTres} des="cover" titulo="japonesa"></Card>
-          <Card url={secDosCoverCuatro} des="cover" titulo="japonesa"></Card>
-          <Card url={secDosCoverCinco} des="cover" titulo="japonesa"></Card>
-          <Card url={secDosCoverSeis} des="cover" titulo="japonesa"></Card>
-        </CardContent>
-      </section>
-      <section>
-        <h2>Series de EE.UU. sobre crimenes</h2>
-        <CardContent>
-          <Card url={secTresCoverUno} des="tres" titulo="sin titulo"></Card>
-          <Card url={secTresCoverDos} des="tres" titulo="sin titulo"></Card>
-          <Card url={secTresCoverTres} des="tres" titulo="sin titulo"></Card>
-          <Card url={secTresCoverCuatro} des="tres" titulo="sin titulo"></Card>
-          <Card url={secTresCoverCinco} des="tres" titulo="sin titulo"></Card>
-          <Card url={secTresCoverSeis} des="tres" titulo="sin titulo"></Card>
-        </CardContent>
-      </section>
-    </Layer>
+    <>
+      <Layer className="movile">
+        <section>
+          <h2>Populares en Netnet</h2>
+          <CardContent>
+            <Card url={coverUno} des="cover uno" titulo="matriz recardo"></Card>
+            <Card url={coverDos} des="cover uno" titulo="matriz recardo"></Card>
+            <Card
+              url={coverTres}
+              des="cover uno"
+              titulo="matriz recardo"
+            ></Card>
+            <Card
+              url={coverCuatro}
+              des="cover uno"
+              titulo="matriz recardo"
+            ></Card>
+            <Card
+              url={coverCinco}
+              des="cover uno"
+              titulo="matriz recardo"
+            ></Card>
+            <Card
+              url={coverSeis}
+              des="cover uno"
+              titulo="matriz recardo"
+            ></Card>
+          </CardContent>
+        </section>
+        <section>
+          <h2>Series japonesas anime</h2>
+          <CardContent>
+            <Card url={secDosCoverUno} des="cover" titulo="japonesa"></Card>
+            <Card url={secDosCoverDos} des="cover" titulo="japonesa"></Card>
+            <Card url={secDosCoverTres} des="cover" titulo="japonesa"></Card>
+            <Card url={secDosCoverCuatro} des="cover" titulo="japonesa"></Card>
+            <Card url={secDosCoverCinco} des="cover" titulo="japonesa"></Card>
+            <Card url={secDosCoverSeis} des="cover" titulo="japonesa"></Card>
+          </CardContent>
+        </section>
+        <section>
+          <h2>Series de EE.UU. sobre crimenes</h2>
+          <CardContent>
+            <Card url={secTresCoverUno} des="tres" titulo="sin titulo"></Card>
+            <Card url={secTresCoverDos} des="tres" titulo="sin titulo"></Card>
+            <Card url={secTresCoverTres} des="tres" titulo="sin titulo"></Card>
+            <Card
+              url={secTresCoverCuatro}
+              des="tres"
+              titulo="sin titulo"
+            ></Card>
+            <Card url={secTresCoverCinco} des="tres" titulo="sin titulo"></Card>
+            <Card url={secTresCoverSeis} des="tres" titulo="sin titulo"></Card>
+          </CardContent>
+        </section>
+      </Layer>
+      <LayerDesktop></LayerDesktop>
+    </>
   );
 };
-
 export default Layers;

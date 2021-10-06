@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import bghero from "../img/bg-hero.png";
+import bgheroDesktop from "../img/bg-hero-desktop.png";
 
 const Hero = styled.div`
   background-image: url(${bghero});
@@ -11,6 +12,11 @@ const Hero = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
+
+  @media screen and (min-width: 768px) {
+    background-image: url(${bgheroDesktop});
+    block-size: 100vh;
+  }
 
   &::after,
   &::before {

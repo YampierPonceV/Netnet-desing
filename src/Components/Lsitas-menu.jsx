@@ -16,6 +16,10 @@ const Listas = styled.ul`
   margin: 0;
   background: #080808;
 
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+
   li a {
     display: flex;
     flex-direction: column;

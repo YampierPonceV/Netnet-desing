@@ -5,6 +5,7 @@ const CardContent = styled.div`
   block-size: 144px;
   gap: 8px;
   overflow-x: scroll;
+  overflow-y: hidden;
 `;
 
 export default CardContent;

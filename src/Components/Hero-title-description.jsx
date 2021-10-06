@@ -11,10 +11,19 @@ const HeroTitle = styled.div`
   gap: 12px;
   margin-block-end: -26px;
 
+  @media screen and (min-width: 768px) {
+    position: absolute;
+    bottom: 50px;
+    left: 0;
+  }
+
   ul {
     display: flex;
     gap: 13px;
     padding: 0;
+    @media screen and (min-width: 768px) {
+      display: none;
+    }
 
     li:first-child {
       list-style: none;

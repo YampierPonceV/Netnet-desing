@@ -38,7 +38,7 @@ const hero = () => {
           </ul>
         </div>
         <ButtonContainer>
-          <Button className="buton-column">
+          <Button className="buton-column my-list">
             <img src={plus} alt="plus" />
             <span>Mi lista</span>
           </Button>

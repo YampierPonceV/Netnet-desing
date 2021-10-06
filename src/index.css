@@ -6,3 +6,16 @@ body {
   -moz-osx-font-smoothing: grayscale;
   background: #080808;
 }
+
+.desktop {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .movile {
+    display: none;
+  }
+  .desktop {
+    display: block;
+  }
+}
